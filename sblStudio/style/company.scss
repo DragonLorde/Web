@@ -1,0 +1,153 @@
+.company {
+    filter: drop-shadow(0px 4px 26px rgba(0, 0, 0, 0.76));
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-width: 100%;
+    min-height:  789px;
+
+    background-image: url("../resourse/img/backgrounds/four.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+        &__logo {
+            p {
+                margin-top: 25px;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 151.4%;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: #FF9900;
+            }
+        }
+
+        &__row {
+            display: flex;
+            flex: 1 1 auto;
+            justify-content: space-between;
+            margin: 40px 190px 0px 190px;
+        }
+
+        &__about {
+           // margin-left: 50px ;
+            //margin-right: 170px;
+            width: 430px;
+            height: 564px;
+            background: rgba(255, 255, 255, 0.81);
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.68);
+            border-radius: 10px;
+            p:nth-child(1) {
+                margin: 26px 0px 0px 49px;
+                padding: 10px;
+                width: 322px;
+                height: 55px;
+                background: #9453FF;
+                border-radius: 20px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 151.4%;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+            }
+            p:nth-child(2) {
+                margin: 0px 0px 0px 49px;
+                width: 192px;
+                padding: 10px;
+                height: 25px;
+                background: #FF9900;
+                border-radius: 20px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 151.4%;
+                letter-spacing: 0.05em;
+                color: #000000;
+            }
+            p:nth-child(3) {
+                margin-top: 15px ;
+                margin-left: 36px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 151.4%;
+                letter-spacing: 0.05em;
+                color: #000000;
+            }
+        }
+
+        &__cont {
+            //margin-right: 270px ;
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+            max-width: 430px;
+            height: 379px;  
+            &__wrap {
+                margin: 40px;
+            }
+            width: 430px;
+            height: 379px;
+            background: rgba(138, 77, 236, 0.91);
+            border-radius: 9px;
+            p:first-of-type {
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 151.4%;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+                margin-bottom: 46px ;
+            }
+            ol li {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 151.4%;
+                letter-spacing: 0.05em;
+                color: #F5F0E1;
+                margin-bottom: 15px ;
+            }
+            ol {
+                margin-bottom: 18px;
+            }
+            p:last-of-type {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 151.4%;
+                letter-spacing: 0.05em;
+                color: #242424;
+            }
+        }
+
+        &__rek {
+            display: flex;
+            
+            flex-direction: column;
+
+        }
+        &__column {
+            width: 139px;
+            height: 200px;
+            margin-bottom: 60px ;
+            background-image: url("../resourse/img/icon/card.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            p {
+                margin-top: 30px;
+                
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 151.4%;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+                    span {
+                        display: inline-block;
+                        margin-top: 20px ;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 151.4%;
+                        letter-spacing: 0.05em;
+                        color: #FFFFFF;
+                    }
+            }
+        }
+}

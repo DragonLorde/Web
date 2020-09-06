@@ -1,0 +1,132 @@
+.sol {
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 553px;
+  background-image: url("../resourse/img/backgrounds/three.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 43px 26px rgba(255, 193, 59, 0.06));
+          filter: drop-shadow(0px 43px 26px rgba(255, 193, 59, 0.06));
+}
+
+.sol__logo {
+  margin: 49px 0px 47px 0px;
+  text-align: center;
+}
+
+.sol__logo p {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 120.9%;
+  letter-spacing: 0.05em;
+  color: #FFEE90;
+}
+
+.sol__row {
+  margin: auto 130px auto 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sol__column {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 236px;
+  height: 264px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(255, 255, 255, 0.84);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.sol__column img {
+  margin-top: 9px;
+  margin-bottom: 4px;
+}
+
+.sol__column__head {
+  margin: 0px auto 0px auto;
+  width: 191px;
+}
+
+.sol__column__head p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120.9%;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.sol__column__head p span {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120.9%;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  color: #000000;
+}
+
+.sol__column__body {
+  margin: 0px auto 0px auto;
+  width: 191px;
+}
+
+.sol__column__body p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120.9%;
+  letter-spacing: 0.05em;
+  color: #2E43FF;
+  border-bottom: 1px solid #FFFFFF;
+  padding-bottom: 6px;
+  margin-bottom: 11px;
+  margin-top: 8px;
+}
+
+.sol__column__body p span {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 120.9%;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.sol__column:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-box-shadow: 0px 4px 45px rgba(161, 61, 240, 0.39);
+          box-shadow: 0px 4px 45px rgba(161, 61, 240, 0.39);
+  -webkit-transform: rotate3d(0, 1, 0, 360deg);
+          transform: rotate3d(0, 1, 0, 360deg);
+}
+/*# sourceMappingURL=sol.css.map */

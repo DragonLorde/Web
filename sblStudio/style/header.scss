@@ -1,0 +1,114 @@
+.header {
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-image: url("../resourse/img/backgrounds/one.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+        &__menu {
+            img{ 
+                height: 88px;
+                margin: 50px 0px 0px 100px ;
+            }
+            display: flex;
+            
+            ol{
+                margin:0px 90px 0px 630px;
+                vertical-align: middle;
+                display: flex;
+                flex: 1 1 auto;
+                justify-content: space-between;
+            }
+            ol li {
+                
+                padding-top: 100px;  
+                a {
+                color: #FFEE90;
+                font-weight: 300;
+                font-size: 28px;
+                line-height: 34px;
+                }
+            }
+        }
+
+        &__about {
+            display: flex;
+            flex:1 1 auto;
+            &__text {
+                margin: 120px 250px 250px 100px;
+                p:first-child {
+                    padding-bottom: 15px;
+                    margin-bottom: 22px;
+                    border-bottom:1px solid  #FFFFFF;
+                }
+                p {
+                    font-weight: 500;
+                    font-size: 46px;
+                    line-height: 120.9%;
+                    letter-spacing: 0.05em;
+                    color: #F5F0E1;
+                    margin-bottom: 55px ;
+                }
+                button {
+                    transition: 1s;
+                    width: 280px;
+                    height: 59px;
+                    background: rgba(255, 255, 255, 0.82);
+                    //box-shadow: 0px 4px 25px rgba(117, 114, 255, 0.41);
+                    border-radius: 31px;
+
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 120.9%;
+                    letter-spacing: 0.05em;
+                    color: #5E3BEA;
+                }
+                button:hover {
+                    transition: 1s;
+                    box-shadow: 0px 4px 25px rgba(117, 114, 255, 0.41);
+                }
+            }
+
+            &__exp {
+                margin:160px 0px 0px 430px; 
+                p {
+                    position: relative;
+                    margin-bottom: 70px;
+                    font-size: 32px;
+                    line-height: 120.9%;
+                    letter-spacing: 0.05em;
+                    color: #F5F0E1;
+                    
+                }
+                P:nth-child(1)::before {
+                    width: 40px;
+                    height: 40px;
+                    content: " ";
+                    position: absolute;
+                    left: -15%;
+                    background-image: url("../resourse/img/icon/support.svg");
+                }
+                P:nth-child(2)::before {
+                    width: 40px;
+                    height: 40px;
+                    content: " ";
+                    position: absolute;
+                    left: -15%;
+                    background-image: url("../resourse/img/icon/lab.svg");
+                }
+                P:nth-child(3)::before {
+                    width: 40px;
+                    height: 40px;
+                    content: " ";
+                    position: absolute;
+                    left: -15%;
+                    background-image: url("../resourse/img/icon/clock.svg");
+                }
+            }
+        }
+}
