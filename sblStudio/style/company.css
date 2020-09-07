@@ -39,7 +39,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 40px 190px 0px 190px;
+  margin: 40px 190px 0px 100px;
 }
 
 .company__about {
@@ -90,6 +90,8 @@
 }
 
 .company__cont {
+  margin-right: 250px;
+  margin-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

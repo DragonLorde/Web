@@ -29,7 +29,8 @@
         &__row {
             display: flex;
             flex: 1 1 auto;
-            justify-content: space-between;
+           // justify-content: space-between;
+            justify-content: center;
             margin: 0px 190px 50px 190px;
         }
 
@@ -38,9 +39,10 @@
                 
                 display: none;
             }
+            margin: 0px 15px 0px 15px;
             transition: 1s;
             text-align: center;
-            width: 200px;
+            min-width: 200px;
             height: 239px;
             background: rgba(148, 146, 146, 0.21);
             border-radius: 15px;

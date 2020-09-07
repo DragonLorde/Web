@@ -39,3 +39,5 @@ let aboutCard = document.querySelectorAll(".about__column");
     for(let prop of btn) {
         prop.addEventListener("click" , menus);
     }
+
+    
