@@ -1,10 +1,13 @@
 .about {
+
+    
+
     filter: drop-shadow(0px 16px 31px rgba(129, 98, 153, 0.25));
     //overflow: hidden;
     display: flex;
     flex: 1 1 auto;
     width: 100%;
-    height: 430px;
+    height: 630px;
     flex-direction: column;
     /////////////////
     background-image: url("../resourse/img/backgrounds/two.jpg");
@@ -15,7 +18,7 @@
         &__text {
             margin: 40px auto 76px auto ;
             p {
-                width: 855.01px;
+                //width: 855.01px;
                
                 font-weight: 600;
                 font-size: 42px;
@@ -29,20 +32,24 @@
         &__row {
             display: flex;
             flex: 1 1 auto;
+           // flex-direction: column;
            // justify-content: space-between;
             justify-content: center;
             margin: 0px 190px 50px 190px;
         }
+
+        
 
         &__column {
             &__hide {
                 
                 display: none;
             }
-            margin: 0px 15px 0px 15px;
+            margin: 20px 40px 0px 40px;
             transition: 1s;
             text-align: center;
             min-width: 200px;
+            max-width: 200px;
             height: 239px;
             background: rgba(148, 146, 146, 0.21);
             border-radius: 15px;
@@ -98,8 +105,83 @@
             }
             margin-top: 30px ;
         }
+
+        &__columns {
+            display: flex;
+            justify-content: center;
+            //margin: 0px auto 0px auto;
+        }
+
+
+        @media (max-width:1420px) {
+            &__column {
+                margin: 20px 10px 0px 10px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            &__row {
+                flex-direction: column;
+            }
+            height: 1000px;
+            &__text {
+                margin: 25px auto 45px auto;
+                p {
+                    text-align: center;
+                    font-size: 32px;
+                }
+            }
+        }
+
+        @media (max-width:706px ) {
+            &__text {
+                margin: 15px auto 20px auto;
+                    p {
+                        font-size: 22px;
+                    }
+            }
+            &__columns {
+                flex-direction: column;
+            }
+            &__row {
+                flex-direction: row;
+            }
+            &__column {
+                max-width: 150px;
+                min-width: 150px;
+                p {
+                    font-size: 14px;
+                }
+                button {
+                    margin: 5px auto 0px auto;
+                }
+            }
+        }
+
+        @media (max-width:420px ) {
+            &__column {
+                margin: 5px;
+                max-width: 130px;
+                min-width: 130px;
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            &__text {
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            &__row {
+                margin: 0px;
+            }
+        }
 }
 
 .hide__button {
+    
     display: none;
+    
 }

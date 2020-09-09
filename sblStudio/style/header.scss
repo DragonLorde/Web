@@ -114,3 +114,98 @@
             }
         }
 }
+
+.header {
+    @media (max-width: 1500px) {
+        &__menu ol {
+            margin-left: 430px;
+        }
+    }
+    @media (max-width: 1280px) {
+        &__menu ol {
+            margin-left: 230px;
+        }
+    }
+
+    @media (max-width: 1450px ) {
+        &__about__exp {
+            margin-right: 50px;
+            p {
+                padding-left: 20px;
+                font-size: 26px;
+            }
+        }
+        &__about__text {
+            p {
+                font-size: 32px;
+            }
+        }
+    }
+
+    @media (max-width: 1150px ) {
+        &__about__exp {
+            margin-right: 50px;
+            margin-left: 120px ;
+            p {
+                padding-left: 20px;
+                font-size: 18px;
+            }
+        }
+        &__menu ol {
+            margin-left: 130px;
+            li a {
+                font-size: 20px ;
+            }
+        }
+    }
+
+    @media ( max-width:950px ) {
+        //max-height: 200px;
+        &__about__text {
+            margin-right: 50px;
+            margin-left: 50px;
+                p {
+                    font-size: 22px;
+                }
+                button {
+                    width: 200px;
+                    height: 29px;
+                    font-size: 18px;
+                }   
+        }
+        &__menu {
+            ol {
+                margin-left: 50px;
+                margin-right: 70px;
+                    li a {
+                        font-size: 16px;
+                    }
+            }
+        }
+    }
+    
+    @media (max-width: 620px ) {
+        &__menu {
+            ol {
+                display: none;
+            }
+        }
+        &__about__exp {
+            margin-left: 25px ;
+        }
+    }
+
+    @media (max-width: 450px) {
+        &__about {
+            flex-direction: column;
+                &__text {
+                    margin: 10px auto 25px auto;
+                }
+
+                &__exp {
+                    margin: 25px auto 0px auto;
+                }
+                
+        }
+    }
+}

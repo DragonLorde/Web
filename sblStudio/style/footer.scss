@@ -65,3 +65,18 @@
             }
         }
 }
+
+.footer {
+    @media(max-width: 600px ) {
+        &__nav {
+            margin: 60px 10px 0px 10px;
+            flex-direction: column;
+            button {
+                width: 280px;
+            }
+        }
+        &__icon {
+            flex-direction: column;
+        }
+    }  
+}

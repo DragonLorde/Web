@@ -171,92 +171,91 @@ head,body {
         
 }
 
-.header {
-    @media (max-width: 1500px) {
-        &__menu ol {
-            margin-left: 430px;
-        }
-    }
-    @media (max-width: 1280px) {
-        &__menu ol {
-            margin-left: 230px;
-        }
-    }
-
-    @media (max-width: 1450px ) {
-        &__about__exp {
-            margin-right: 50px;
+.menu {
+    &__row {
+        @media(max-width: 800px) {
+            max-width: 700px;
             p {
-                padding-left: 20px;
-                font-size: 26px;
+                font-size: 10px;
             }
         }
+    }
+    form {
+       input[type="submit"] {
+            max-width: 400px;
+       }
     }
 
-    @media (max-width: 1150px ) {
-        &__about__exp {
-            margin-right: 50px;
-            margin-left: 120px ;
-            p {
-                padding-left: 20px;
-                font-size: 18px;
-            }
+    @media (max-width:750px) {
+        &__row {
+            max-width: 400px;
         }
-        &__menu ol {
-            margin-left: 130px;
-            li a {
-                font-size: 20px ;
-            }
-        }
-    }
 
-    @media ( max-width:950px ) {
-        //max-height: 200px;
-        &__about__text {
-            margin-right: 50px;
-            margin-left: 50px;
-                p {
-                    font-size: 22px;
-                }
-                button {
-                    width: 200px;
-                    height: 29px;
-                    font-size: 18px;
-                }   
+        form {
+            padding: 0px;
+            input {
+                max-width: 300px;
+            }
+            input[type="submit"] {
+                max-width: 300px;
+           }
         }
-        &__menu {
-            ol {
-                margin-left: 50px;
-                margin-right: 70px;
-                    li a {
-                        font-size: 16px;
-                    }
+    }
+    @media (max-width:450px) {
+        position: fixed;
+        
+        &__logo {
+            margin-top: 65px ;
+            p:first-of-type {
+                font-size: 16px;
+            }
+            p:last-of-type {
+                font-size: 12px;
             }
         }
-    }
-    
-    @media (max-width: 620px ) {
-        &__menu {
-            ol {
-                display: none;
+        &__row {
+            margin: 0px;
+            //margin-top: 10px ;
+            //max-width: 280px;
+            max-width: 100%;
+            min-width: 100%;
+            max-height: 100%;
+            max-width: 320px;
+        }
+        &__input {
+            margin: 5px auto 5px auto;
+        }
+        form {
+            padding: 0px;
+            margin: 0px;
+            //margin: 5px;
+            justify-content: center;
+            //margin: 5px auto 5px auto;
+            input:nth-child(1){
+                max-width: 220px;
+                max-height: 40px;
+                margin: 10px auto 10px auto;
+                font-size: 14px;
             }
-        }
-        &__about__exp {
-            margin-left: 25px ;
+            input:nth-child(2){
+                max-width: 220px;
+                max-height: 40px;
+               
+               
+               margin: 10px auto 10px auto;
+               font-size: 14px;
+            }
+            input:nth-child(3){
+                max-width: 220px;
+                max-height: 40px;
+                margin: 10px auto 10px auto;
+                font-size: 14px;
+            }
+            input[type="submit"] {
+                max-width: 220px;
+                max-height: 40px;
+                margin-bottom: 20px ;
+           }
         }
     }
-
-    @media (max-width: 450px) {
-        &__about {
-            flex-direction: column;
-                &__text {
-                    margin: 10px auto 25px auto;
-                }
-
-                &__exp {
-                    margin: 25px auto 0px auto;
-                }
-                
-        }
-    }
-}
+}    

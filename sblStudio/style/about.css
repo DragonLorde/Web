@@ -8,7 +8,7 @@
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   width: 100%;
-  height: 430px;
+  height: 630px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -24,7 +24,6 @@
 }
 
 .about__text p {
-  width: 855.01px;
   font-weight: 600;
   font-size: 42px;
   line-height: 120.9%;
@@ -47,11 +46,12 @@
 }
 
 .about__column {
-  margin: 0px 15px 0px 15px;
+  margin: 20px 40px 0px 40px;
   -webkit-transition: 1s;
   transition: 1s;
   text-align: center;
   min-width: 200px;
+  max-width: 200px;
   height: 239px;
   background: rgba(148, 146, 146, 0.21);
   border-radius: 15px;
@@ -117,6 +117,88 @@
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 2px solid #BB4EFE;
+}
+
+.about__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1420px) {
+  .about__column {
+    margin: 20px 10px 0px 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about {
+    height: 1000px;
+  }
+  .about__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__text {
+    margin: 25px auto 45px auto;
+  }
+  .about__text p {
+    text-align: center;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 706px) {
+  .about__text {
+    margin: 15px auto 20px auto;
+  }
+  .about__text p {
+    font-size: 22px;
+  }
+  .about__columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about__column {
+    max-width: 150px;
+    min-width: 150px;
+  }
+  .about__column p {
+    font-size: 14px;
+  }
+  .about__column button {
+    margin: 5px auto 0px auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .about__column {
+    margin: 5px;
+    max-width: 130px;
+    min-width: 130px;
+  }
+  .about__column p {
+    font-size: 12px;
+  }
+  .about__text p {
+    font-size: 18px;
+  }
+  .about__row {
+    margin: 0px;
+  }
 }
 
 .hide__button {

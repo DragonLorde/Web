@@ -7,7 +7,7 @@
      
         &__logo {
             text-align: center;
-            width: 647px;
+           // width: 647px;
             margin: 90px auto 0px auto ;
             padding-bottom: 15px;
             border-bottom: 1px solid #F5D990;;
@@ -20,9 +20,15 @@
             }
         }
 
+        &__rows {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
         &__row {
             display: flex;
-            flex: 1 1 auto;
+            //flex: 1 1 auto;
             justify-content: space-between;
             margin: 60px auto 90px auto ;
         }
@@ -185,3 +191,246 @@
         
 }
 
+.proj {
+    @media (max-width: 1200px) {
+        &__card {
+            min-width: 240px;
+            max-width: 240px;
+            
+        }
+        &__card:nth-child(2) {
+            p:last-of-type {
+                margin-bottom:15px ;
+            }
+        }
+        &__card2 {
+            min-width: 240px;
+            max-width: 240px;
+        }
+    }
+    @media(max-width: 970px) {
+        &__row{
+            margin-bottom: 20px;
+            justify-content: end;
+        }
+        &__card {
+            margin-bottom: 10px;
+            max-width: 190px;
+            min-width: 190px;
+            max-height: 300px;
+            min-height: 300px;
+            margin: 10px 20px 10px 20px;
+            p:first-of-type {
+                font-size: 16px;
+            }
+            P:last-of-type {
+                font-size: 14px;
+                    span {
+                        font-size: 16px;
+                    }
+            }
+            button {
+                min-width: 172px;
+                max-width: 172px;
+                min-height: 30px;
+                max-height: 30px;
+                font-size: 18px;
+            }
+        }
+        &__card2 {
+            margin: 10px 20px 10px 20px;
+            max-width: 190px;
+            min-width: 190px;
+            max-height: 300px;
+            max-height: 300px;
+            
+            p:first-of-type {
+                font-size: 16px;
+            }
+            P:last-of-type {
+                font-size: 14px;
+                    span {
+                        font-size: 16px;
+                    }
+            }
+            button {
+                min-width: 172px;
+                max-width: 172px;
+                min-height: 30px;
+                max-height: 30px;
+                font-size: 18px;
+            }
+        }
+        &__card:nth-child(1) {
+            p:last-of-type {
+                margin-bottom:35px ;
+            }
+        }
+        &__card:nth-child(2) {
+            p:last-of-type {
+                margin-bottom:0px ;
+            }
+        }
+        &__card:nth-child(3) {
+            p:last-of-type {
+                margin-bottom:35px ;
+            }
+        }
+        &__card2:nth-child(1) {
+
+            p:first-of-type {
+                margin-bottom: 0px ;
+                padding: 0px;
+            }
+            p:last-of-type {
+                margin-bottom:30px ;
+                padding: 0px;
+            }
+        }
+        &__card2:nth-child(2) {
+            p:first-of-type {
+                margin-bottom: 10px ;
+            }
+            p:last-of-type {
+                font-size: 14px;
+                margin-bottom:8px ;
+            }
+        }
+        &__card2:nth-child(3) {
+            p:first-of-type {
+                font-size: 14.5px;
+                margin-bottom: 3px;
+            }
+            p:last-of-type {
+                font-size: 13.5px;
+                margin-bottom:20px ;
+                padding: 0px;
+            }
+           
+        }
+    }
+    @media(max-width: 700px) {
+        &__row {
+            flex-direction: column;
+        }
+        &__rows {
+            flex-direction: row;
+        }
+        &__logo {
+            p {
+                font-size: 32px;
+            }
+        }
+        &__card:nth-child(1) {
+            p:last-of-type {
+                margin-bottom:20px ;
+            }
+        }
+        &__card:nth-child(2) {
+            p:last-of-type {
+                margin-bottom:0px ;
+            }
+        }
+        &__card:nth-child(3) {
+            p:last-of-type {
+                margin-bottom:35px ;
+            }
+        }
+        &__card2:nth-child(1) {
+
+            p:first-of-type {
+                margin-bottom: 0px ;
+                padding: 0px;
+            }
+            p:last-of-type {
+                margin-bottom:20px ;
+                padding: 0px;
+            }
+        }
+        &__card2:nth-child(2) {
+            p:first-of-type {
+                margin-bottom: 10px ;
+            }
+            p:last-of-type {
+                font-size: 14px;
+                margin-bottom:8px ;
+            }
+        }
+        &__card2:nth-child(3) {
+            p:first-of-type {
+                font-size: 14.5px;
+                margin-bottom: 3px;
+            }
+            p:last-of-type {
+                font-size: 13.5px;
+                margin-bottom:20px ;
+                padding: 0px;
+            }
+           
+        }
+    }
+    @media (max-width:460px) {
+        &__card {
+            max-width: 150px;
+            min-width: 150px;
+            margin: 5px;
+        }
+        &__card2 {
+            margin: 5px;
+            max-width: 150px;
+            min-width: 150px;
+        }
+        button {
+            max-width: 120px;
+            min-width: 120px;
+        }
+        /////////////////////////
+        &__card:nth-child(1) {
+            p:last-of-type {
+                margin-bottom:20px ;
+            }
+        }
+        &__card:nth-child(2) {
+            p:last-of-type {
+                margin-bottom:0px ;
+            }
+        }
+        &__card:nth-child(3) {
+            p:last-of-type {
+                margin-bottom:35px ;
+            }
+        }
+        &__card2:nth-child(1) {
+
+            p:first-of-type {
+                margin-bottom: 0px ;
+                padding: 0px;
+            }
+            p:last-of-type {
+                margin-bottom:3px ;
+                padding: 0px;
+            }
+        }
+        &__card2:nth-child(2) {
+            p:first-of-type {
+                margin-bottom: 15px ;
+            }
+            p:last-of-type {
+                font-size: 14px;
+                margin-bottom:3px ;
+            }
+        }
+        &__card2:nth-child(3) {
+            p:first-of-type {
+                font-size: 14.5px;
+                margin-bottom: 3px;
+            }
+            p:last-of-type {
+                font-size: 13.5px;
+                margin-bottom:3px ;
+                padding: 0px;
+            }
+           
+        }
+    }
+}
