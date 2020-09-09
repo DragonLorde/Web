@@ -258,4 +258,15 @@ head,body {
            }
         }
     }
-}    
+}
+
+.hide__hides {
+    opacity: 1;
+    transition: 2s;
+    margin-top: 30px;
+}
+
+.bt__op {
+    transition: 1s;
+    opacity: 0;
+}

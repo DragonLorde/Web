@@ -42,7 +42,9 @@
 
         &__column {
             &__hide {
-                
+                transition: 1s;
+                opacity: 0;
+
                 display: none;
             }
             margin: 20px 40px 0px 40px;
@@ -55,6 +57,7 @@
             border-radius: 15px;
             img{margin:18px auto 22px auto ;}
             p {
+                transition: 1s;
                 font-weight: 300;
                 font-size: 18px;
                 line-height: 134.4%;
@@ -94,6 +97,8 @@
         }
         
         &__hv {
+            transition: 2s;
+            opacity: 0;
             p {
                 margin: 2px 20px 0px 20px ;
                 text-align: left;
@@ -153,7 +158,8 @@
                     font-size: 14px;
                 }
                 button {
-                    margin: 5px auto 0px auto;
+                    margin: 15px auto 0px auto;
+                    width: 120px;
                 }
             }
         }
@@ -163,6 +169,7 @@
                 margin: 5px;
                 max-width: 130px;
                 min-width: 130px;
+                
                 p {
                     font-size: 12px;
                 }
@@ -176,6 +183,11 @@
 
             &__row {
                 margin: 0px;
+            }
+            &__column:hover {
+                p {
+                font-size: 12px;
+                }
             }
         }
 }
