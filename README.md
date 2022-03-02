@@ -1,2 +1,1 @@
-# Web
-# Anokhin
+# Simple project
